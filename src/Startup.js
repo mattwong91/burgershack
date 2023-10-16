@@ -28,10 +28,10 @@ export class Startup {
       audience: process.env.AUTH_AUDIENCE
     }
     const { domain, clientId, audience } = AUTH_CONFIG
-    if (domain && clientId && audience) {
-      return Auth0Provider.configure(AUTH_CONFIG)
-    }
-    logger.warn('Auth not available, config variables were not set')
+    // if (domain && clientId && audience) {
+    //   return Auth0Provider.configure(AUTH_CONFIG)
+    // }
+    // logger.warn('Auth not available, config variables were not set')
   }
 
   static get corsOptions() {

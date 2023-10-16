@@ -1,4 +1,4 @@
-import { burgerDb } from "../db/BurgerDB.js"
+import { burgerDb } from "../db/BurgerDb.js"
 import { Burger } from "../models/Burger.js"
 
 class BurgersService {
@@ -32,10 +32,7 @@ class BurgersService {
   }
 
   async updateBurger(burgerId, burgerData) {
-    let foundBurger = burgerDb.burgers.find(burger => burger.id == burgerId)
-    const updatedBurger = Burger.assign(foundBurger, new Burger(burgerData))
-
-    return updatedBurger
+    //TODO find out how to implement an update
   }
 
 }
